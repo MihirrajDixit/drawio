@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-25T07:11:35.987Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="5wn8LjOWtYmNzWXNQxld" version="12.1.4" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-10-25T07:18:40.985Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="xiAdOzHRsb5TEAd-yuHw" version="12.1.4" type="github" pages="1">
   <diagram id="hqEAvfo70rcamGE8vuLW" name="Page-1">
     <mxGraphModel dx="905" dy="1617" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -172,7 +172,7 @@
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="P00XJH04R1qY2HiNNrUX-68" value="HermesConsumer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1493" y="150" width="113" height="40" as="geometry"/>
+          <mxGeometry x="1445" y="150" width="113" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="P00XJH04R1qY2HiNNrUX-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="P00XJH04R1qY2HiNNrUX-69" target="P00XJH04R1qY2HiNNrUX-70">
           <mxGeometry relative="1" as="geometry"/>
@@ -240,10 +240,10 @@
         <mxCell id="P00XJH04R1qY2HiNNrUX-96" value="消费策略" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1693" y="100" width="113" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="P00XJH04R1qY2HiNNrUX-98" value="并行" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="P00XJH04R1qY2HiNNrUX-98" value="并行Processor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1861" y="45" width="113" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="P00XJH04R1qY2HiNNrUX-102" value="顺序" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="P00XJH04R1qY2HiNNrUX-102" value="顺序Processor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1866" y="118" width="113" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="P00XJH04R1qY2HiNNrUX-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="P00XJH04R1qY2HiNNrUX-104" target="P00XJH04R1qY2HiNNrUX-106">
