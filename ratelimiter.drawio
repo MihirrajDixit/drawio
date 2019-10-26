@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-26T07:55:01.721Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="awZUjmY-QazZ8yISblQL" version="12.1.7" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-10-26T08:08:30.855Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="mqREUS_yNgWVVVPEeoaq" version="12.1.7" type="github" pages="1">
   <diagram id="BlIlwqBDZ2dwoWJCBVmW" name="Page-1">
     <mxGraphModel dx="772" dy="463" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -48,6 +48,9 @@
         </mxCell>
         <mxCell id="ehZDFXviFSveSP2z2rJo-19" value="直接执行" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="352" y="480" width="152" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="ehZDFXviFSveSP2z2rJo-22" value="tryAcquie和acquire还是有区别的&lt;br&gt;如果当前时间加上超时时间都小于nextFreeTicketTime,那就直接拒绝了，否则就可以获取令牌。" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="169" y="589" width="514" height="28" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
