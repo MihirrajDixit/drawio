@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-30T09:35:47.807Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="ANlV4RTMDsFzC_PH63MH" version="12.1.8" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-10-30T09:36:15.524Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="2Rp0Kw-2uTn9INo3_X4n" version="12.1.8" type="github" pages="1">
   <diagram id="uakVdeDMaknO-sdMOJrC" name="Page-1">
     <mxGraphModel dx="1487" dy="593" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,8 +28,8 @@
         <mxCell id="Uq3KH3kaq2MuA7tBNWyy-8" value="oopMap&lt;br&gt;栈变量-&amp;gt;堆空间对象" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40.5" y="80" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="Uq3KH3kaq2MuA7tBNWyy-10" value="GC Roots&amp;nbsp; &amp;nbsp;核心思想空间换时间" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
-          <mxGeometry x="-169.5" y="27" width="181" height="14" as="geometry"/>
+        <mxCell id="Uq3KH3kaq2MuA7tBNWyy-10" value="GC Roots&amp;nbsp; &amp;nbsp;核心思想空间换时间，实现准确式GC" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="-169.5" y="27" width="271" height="14" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
