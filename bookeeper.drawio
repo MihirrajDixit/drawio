@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-11T07:21:58.883Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="EVXhHm4Lyke5B48vSVaY" version="12.2.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-11T07:51:50.372Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="ZUH_eK6Spg2IRXa4KqQ2" version="12.2.3" type="github" pages="1">
   <diagram id="bo_fu6kjIm6VQUlNU3Ol" name="Page-1">
     <mxGraphModel dx="932" dy="1661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,16 +47,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-16" value="EntryLog" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="870" y="188" width="160" height="134" as="geometry"/>
+          <mxGeometry x="870" y="188" width="230" height="134" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-17" value="entryLogManager&#xa;entryLoggerAllocator&#xa;compationLogChannel&#xa;ledgerDirsManager" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-16">
-          <mxGeometry y="26" width="160" height="74" as="geometry"/>
+          <mxGeometry y="26" width="230" height="74" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-16">
-          <mxGeometry y="100" width="160" height="8" as="geometry"/>
+          <mxGeometry y="100" width="230" height="8" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-19" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-16">
-          <mxGeometry y="108" width="160" height="26" as="geometry"/>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-19" value="long addEntry(long ledgerId,ByteBuf entry)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-16">
+          <mxGeometry y="108" width="230" height="26" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-20" value="CompactableLedgerStorage" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="610" y="50" width="180" height="86" as="geometry"/>
@@ -87,6 +87,87 @@
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-28" value="lac(8)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1140" y="-240" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-29" value="EntryLogManagerBase" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="-116" width="240" height="124" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-30" value="ledgerDirsManager&#xa;entryLoggerAllocator&#xa;rotatedLogChannels&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-29">
+          <mxGeometry y="26" width="240" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-50" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;" edge="1" parent="V-iGmPCxZ_tZtfFWMEnv-29">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="240" y="62.5" as="sourcePoint"/>
+            <mxPoint x="400" y="62.5" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-29">
+          <mxGeometry y="90" width="240" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-32" value="long addEntry(long ledgerId,ByteBuf entry)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-29">
+          <mxGeometry y="98" width="240" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-33" value="EntryLogManagerForEntryLogPerLedger" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="84" width="260" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-34" value="activeLogChannel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-33">
+          <mxGeometry y="26" width="260" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-35" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-33">
+          <mxGeometry y="52" width="260" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-36" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-33">
+          <mxGeometry y="60" width="260" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-37" value="EntryLogManagerForSingleEntryLog" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="84" width="260" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-38" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-37">
+          <mxGeometry y="26" width="260" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-37">
+          <mxGeometry y="52" width="260" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-40" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-37">
+          <mxGeometry y="60" width="260" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-41" value="EntryLoggerAllocator(预分配log文件)&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2170" y="-330" width="265" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-42" value="activeLogChannel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-41">
+          <mxGeometry y="26" width="265" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-41">
+          <mxGeometry y="52" width="265" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-44" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-41">
+          <mxGeometry y="60" width="265" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-45" value="LedgerDirsManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2180" y="-100" width="265" height="114" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-46" value="ledgerDirectories&#xa;writableLedgerDirectories" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-45">
+          <mxGeometry y="26" width="265" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-47" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-45">
+          <mxGeometry y="80" width="265" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-48" value=" List&lt;File&gt; getWritableLedgerDirsForNewLog()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-45">
+          <mxGeometry y="88" width="265" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-49" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;exitX=1.004;exitY=0.281;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="V-iGmPCxZ_tZtfFWMEnv-30" target="V-iGmPCxZ_tZtfFWMEnv-42">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="1990" y="-280" as="sourcePoint"/>
+            <mxPoint x="2150" y="-280" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-59" value="EntryLogManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="-280" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-61" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-59">
+          <mxGeometry y="26" width="160" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-62" value="File getDirForNextEntryLog(List&lt;File&gt; writableLedgerDirs)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-59">
+          <mxGeometry y="34" width="160" height="26" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
