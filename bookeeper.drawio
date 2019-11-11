@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-11T09:01:44.454Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="a-rO6iTeXFP3zvKx4zl8" version="12.2.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-11T09:18:48.635Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="KFDuXJxCv2aOOQrckwym" version="12.2.3" type="github" pages="1">
   <diagram id="bo_fu6kjIm6VQUlNU3Ol" name="Page-1">
     <mxGraphModel dx="932" dy="1661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -215,22 +215,28 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-83" value="CheckpointSource" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1677.5" y="-770" width="160" height="86" as="geometry"/>
+          <mxGeometry x="1654" y="-820" width="353" height="120" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-84" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-83">
-          <mxGeometry y="26" width="160" height="26" as="geometry"/>
+          <mxGeometry y="26" width="353" height="26" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-85" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-83">
-          <mxGeometry y="52" width="160" height="8" as="geometry"/>
+          <mxGeometry y="52" width="353" height="8" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-86" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-83">
-          <mxGeometry y="60" width="160" height="26" as="geometry"/>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-86" value="Checkpoint newCheckpoint()&#xa;void checkpointComplete(Checkpoint checkpoint, boolean compact)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-83">
+          <mxGeometry y="60" width="353" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-87" value="CheckpointSourceList" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1600" y="-622" width="375" height="110" as="geometry"/>
+          <mxGeometry x="1600" y="-621" width="375" height="110" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-88" value="checkpointSourcesList:  List&lt;CheckpointSourceList&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-87">
           <mxGeometry y="26" width="375" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-101" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;exitX=0.996;exitY=0.259;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="V-iGmPCxZ_tZtfFWMEnv-87" source="V-iGmPCxZ_tZtfFWMEnv-96">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="-120" y="51" as="sourcePoint"/>
+            <mxPoint y="51" as="targetPoint"/>
+          </mxGeometry>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-89" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-87">
           <mxGeometry y="52" width="375" height="8" as="geometry"/>
@@ -239,7 +245,7 @@
           <mxGeometry y="60" width="375" height="50" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-91" value="Checkpoint" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1270" y="-760" width="160" height="86" as="geometry"/>
+          <mxGeometry x="1145" y="-760" width="160" height="86" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-92" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-91">
           <mxGeometry y="26" width="160" height="26" as="geometry"/>
@@ -247,11 +253,11 @@
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-93" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-91">
           <mxGeometry y="52" width="160" height="8" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-94" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-91">
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-94" value="compareTo(Checkpoint c)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-91">
           <mxGeometry y="60" width="160" height="26" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-95" value="CheckpointList" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1225" y="-610" width="250" height="114" as="geometry"/>
+          <mxGeometry x="1225" y="-610" width="250" height="140" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-96" value="checkpoints:List&lt;Checkpoint&gt;&#xa;source:  CheckpointSourceList" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-95">
           <mxGeometry y="26" width="250" height="54" as="geometry"/>
@@ -259,8 +265,8 @@
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-97" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-95">
           <mxGeometry y="80" width="250" height="8" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-98" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-95">
-          <mxGeometry y="88" width="250" height="26" as="geometry"/>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-98" value="compareTo(Checkpoint c)&#xa;void checkpointComplete(boolean compact)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-95">
+          <mxGeometry y="88" width="250" height="52" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-99" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;entryX=0.5;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="V-iGmPCxZ_tZtfFWMEnv-95" target="V-iGmPCxZ_tZtfFWMEnv-94">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -268,11 +274,59 @@
             <mxPoint x="1240" y="-610" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-100" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;entryX=0.5;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-100" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;entryX=0.442;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="V-iGmPCxZ_tZtfFWMEnv-86">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1757" y="-621.5" as="sourcePoint"/>
             <mxPoint x="1757" y="-684.512" as="targetPoint"/>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-102" value="Journal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="-610" width="160" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-103" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-102">
+          <mxGeometry y="26" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-104" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-102">
+          <mxGeometry y="52" width="160" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-105" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-102">
+          <mxGeometry y="60" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-106" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;entryX=0.89;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.456;exitY=-0.035;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="V-iGmPCxZ_tZtfFWMEnv-102" target="V-iGmPCxZ_tZtfFWMEnv-86">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2040" y="-630" as="sourcePoint"/>
+            <mxPoint x="1820.0259999999998" y="-690" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-107" value="LogMarkCheckPoint" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="980" y="-597" width="160" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-108" value="mark: LastLogMark" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-107">
+          <mxGeometry y="26" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-109" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-107">
+          <mxGeometry y="52" width="160" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-110" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-107">
+          <mxGeometry y="60" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-111" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;entryX=0.256;entryY=1.115;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="V-iGmPCxZ_tZtfFWMEnv-94">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1060" y="-597" as="sourcePoint"/>
+            <mxPoint x="935" y="-660.012" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-112" value="LogMark" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="781" y="-740" width="160" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-113" value="logFileId: long&#xa;logFileOffset: long" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-112">
+          <mxGeometry y="26" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-114" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-112">
+          <mxGeometry y="70" width="160" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-115" value="compare(LogMark l)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-112">
+          <mxGeometry y="78" width="160" height="26" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
