@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-11T08:00:08.075Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="7tHi0TiAj8_joqeE3cgz" version="12.2.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-11T08:23:37.197Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="xBj7oYQcupcWba6UC5dn" version="12.2.3" type="github" pages="1">
   <diagram id="bo_fu6kjIm6VQUlNU3Ol" name="Page-1">
     <mxGraphModel dx="932" dy="1661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-1" value="Bookie" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="300" y="160" width="160" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-2" value="ledgerManager&#xa;ledgerStorage&#xa;journals:List&lt;Journal&gt;&#xa;syncThread" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-1">
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-2" value="ledgerManager&#xa;ledgerStorage&#xa;journals:List&lt;Journal&gt;&#xa;syncThread&#xa;dirsMonitor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-1">
           <mxGeometry y="26" width="160" height="74" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-1">
@@ -107,7 +107,7 @@
           <mxGeometry y="98" width="240" height="26" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-33" value="EntryLogManagerForEntryLogPerLedger" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1580" y="84" width="260" height="86" as="geometry"/>
+          <mxGeometry x="1610" y="117" width="260" height="86" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-34" value="activeLogChannel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-33">
           <mxGeometry y="26" width="260" height="26" as="geometry"/>
@@ -119,9 +119,9 @@
           <mxGeometry y="60" width="260" height="26" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-37" value="EntryLogManagerForSingleEntryLog" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1880" y="84" width="260" height="86" as="geometry"/>
+          <mxGeometry x="1990" y="117" width="260" height="86" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-38" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-37">
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-38" value="shouldCreateNewEntryLog" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-37">
           <mxGeometry y="26" width="260" height="26" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-37">
@@ -145,7 +145,7 @@
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-45" value="LedgerDirsManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="2180" y="-100" width="265" height="114" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-46" value="ledgerDirectories&#xa;writableLedgerDirectories" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-45">
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-46" value="ledgerDirectories&#xa;writableLedgerDirectories&#xa;listeners:  List&lt;LedgerDirsListener&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-45">
           <mxGeometry y="26" width="265" height="54" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-47" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-45">
@@ -180,6 +180,24 @@
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-74" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-71">
           <mxGeometry y="60" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-75" value="LedgerDirsMonitor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2610" y="-74" width="290" height="154" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-76" value="diskChecker&#xa;dirsManagers" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-75">
+          <mxGeometry y="26" width="290" height="94" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-77" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-75">
+          <mxGeometry y="120" width="290" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-78" value="start()//每隔10s检查磁盘，并触发dirsManager的监听器" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-75">
+          <mxGeometry y="128" width="290" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-79" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;exitX=0;exitY=0.319;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="V-iGmPCxZ_tZtfFWMEnv-76" target="V-iGmPCxZ_tZtfFWMEnv-46">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="2490" y="90" as="sourcePoint"/>
+            <mxPoint x="2650" y="90" as="targetPoint"/>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
