@@ -1,20 +1,20 @@
-<mxfile host="www.draw.io" modified="2019-11-11T14:02:01.654Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="XoHPylWQHpIlg2w2hw-d" version="12.2.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-11T14:45:31.756Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="epfJz9BAgoZwgupGgj84" version="12.2.3" type="github" pages="1">
   <diagram id="bo_fu6kjIm6VQUlNU3Ol" name="Page-1">
-    <mxGraphModel dx="1759" dy="1617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2586" dy="1617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-1" value="Bookie" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-600" y="886" width="590" height="180" as="geometry"/>
+          <mxGeometry x="-600" y="886" width="590" height="220" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-2" value="ledgerManager&#xa;ledgerStorage&#xa;journals:List&lt;Journal&gt;&#xa;syncThread&#xa;dirsMonitor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-1">
-          <mxGeometry y="26" width="590" height="74" as="geometry"/>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-2" value="ledgerManager&#xa;ledgerStorage&#xa;journals:List&lt;Journal&gt;&#xa;syncThread&#xa;dirsMonitor&#xa;handles：HandleFactory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-1">
+          <mxGeometry y="26" width="590" height="114" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-1">
-          <mxGeometry y="100" width="590" height="20" as="geometry"/>
+          <mxGeometry y="140" width="590" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-4" value="public void addEntry(ByteBuf entry, boolean ackBeforeSync, WriteCallback cb, Object ctx, byte[] masterKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-1">
-          <mxGeometry y="120" width="590" height="60" as="geometry"/>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-4" value="public void addEntry(ByteBuf entry, boolean ackBeforeSync, WriteCallback cb, Object ctx, byte[] masterKey)&#xa;addEntryInternal(LedgerDescriptor handle, ByteBuf entry,boolean ackBeforeSync, WriteCallback cb, Object ctx, byte[] masterKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-1">
+          <mxGeometry y="160" width="590" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="V-iGmPCxZ_tZtfFWMEnv-5" value="LedgerStorage" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="660" y="-220" width="160" height="200" as="geometry"/>
@@ -413,6 +413,92 @@
             <mxPoint x="280" y="240" as="sourcePoint"/>
             <mxPoint x="440" y="240" as="targetPoint"/>
             <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-147" value="LedgerDescriptor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="330" width="220" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-148" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-147">
+          <mxGeometry y="26" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-149" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-147">
+          <mxGeometry y="52" width="220" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-150" value="long addEntry(ByteBuf entry)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-147">
+          <mxGeometry y="60" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-151" value="LedgerDescriptorImpl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="472" width="160" height="114" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-152" value="ledgerStorage&#xa;ledgerId" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-151">
+          <mxGeometry y="26" width="160" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-153" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-151">
+          <mxGeometry y="80" width="160" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-154" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-151">
+          <mxGeometry y="88" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-160" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="V-iGmPCxZ_tZtfFWMEnv-138">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="-350" y="490" as="sourcePoint"/>
+            <mxPoint x="-190" y="490" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-210" y="490"/>
+              <mxPoint x="-210" y="268"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-161" value="HandleFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-1050" y="484" width="340" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-162" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-161">
+          <mxGeometry y="26" width="340" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-163" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-161">
+          <mxGeometry y="52" width="340" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-164" value="LedgerDescriptor getHandle(long ledgerId, byte[] masterKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-161">
+          <mxGeometry y="60" width="340" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-167" value="" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="V-iGmPCxZ_tZtfFWMEnv-148">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-710" y="550" as="sourcePoint"/>
+            <mxPoint x="-550" y="550" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-169" value="LedgerCache" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="320" width="160" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-170" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-169">
+          <mxGeometry y="26" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-171" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-169">
+          <mxGeometry y="52" width="160" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-172" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-169">
+          <mxGeometry y="60" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-173" value="LedgerCacheImpl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="441" width="160" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-174" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-173">
+          <mxGeometry y="26" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-175" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-173">
+          <mxGeometry y="52" width="160" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-176" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V-iGmPCxZ_tZtfFWMEnv-173">
+          <mxGeometry y="60" width="160" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="V-iGmPCxZ_tZtfFWMEnv-177" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="V-iGmPCxZ_tZtfFWMEnv-170">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="800" y="250" as="sourcePoint"/>
+            <mxPoint x="960" y="250" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="880" y="250"/>
+              <mxPoint x="880" y="359"/>
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
