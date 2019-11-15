@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-15T06:44:15.964Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="mWc-P33yX8gylOxUPgZb" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-15T06:53:02.080Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="5UMVf80fcZ5ZYN0eJfRL" version="12.2.6" type="github" pages="1">
   <diagram id="DZkcl5uELrtVRS4WrYOl" name="Page-1">
     <mxGraphModel dx="932" dy="541" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -49,6 +49,12 @@
         </mxCell>
         <mxCell id="1AgZTkbqDzkzqkfSQEco-16" value="客观下线quarum" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
           <mxGeometry x="58" y="234" width="99" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="1AgZTkbqDzkzqkfSQEco-17" value="sentinel检测到某个redis客观下线，向其他sentinel发送命令，请求把自己选举为leader&lt;br&gt;选举某个redis的slave为新的master（ping未超时、复制偏移量最大、runid最小）" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="357" y="308" width="464" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="1AgZTkbqDzkzqkfSQEco-18" value="具体转移过程：&lt;br&gt;slave 执行slave of no one,表明自己是leader&lt;br&gt;向其他节点发送slave of xx&lt;br&gt;等待slave RDB完成数据同步" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="409" y="377" width="243" height="56" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
